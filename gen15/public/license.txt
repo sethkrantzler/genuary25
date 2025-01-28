@@ -1,0 +1,11 @@
+Model Information:
+* title:	Franklin Furniture
+* source:	https://sketchfab.com/3d-models/franklin-furniture-6e9ef24d27694c5fb5af9ba81ba8ad82
+* author:	rcfranklin (https://sketchfab.com/rcfranklin)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Franklin Furniture" (https://sketchfab.com/3d-models/franklin-furniture-6e9ef24d27694c5fb5af9ba81ba8ad82) by rcfranklin (https://sketchfab.com/rcfranklin) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

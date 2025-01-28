@@ -1,0 +1,16 @@
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.machine iframe {
+    width: 1510px;
+    height: 1300px;
+}
