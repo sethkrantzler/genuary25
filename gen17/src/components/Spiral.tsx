@@ -40,7 +40,7 @@ const Spiral: React.FC<SpiralProps> = ({ height, radius, numParticles, size, gap
     }, [height, radius, numParticles, size, gap]);
 
     return (
-        <group position={[0, -height / 2, 0]}>
+        <group position={[0, -height / 2, 0]} rotation={[0, Math.PI / 2, 0]}>
             {particlesRef.current.map((particle, index) => (
                 <primitive key={index} object={particle} />
             ))}

@@ -5,11 +5,11 @@ import Spiral from './Spiral';
 import gsap from 'gsap';
 
 const Experience = () => {
-    const [height, setHeight] = useState(5);
-    const [radius, setRadius] = useState(2);
-    const [numParticles, setNumParticles] = useState(100);
-    const [size, setSize] = useState(0.01);
-    const [gap, setGap] = useState(0);
+    const [height, setHeight] = useState(3.5);
+    const [radius, setRadius] = useState(5);
+    const [numParticles, setNumParticles] = useState(500);
+    const [size, setSize] = useState(0.06);
+    const [gap, setGap] = useState(10);
 
     const [curGap, setCurGap]=useState(0);
 
@@ -30,10 +30,10 @@ const Experience = () => {
     useEffect(() => {
         const gui = new GUI();
         gui.add({ height }, 'height', 1, 10, 0.1).onChange((value: React.SetStateAction<number>) => setHeight(value));
-        gui.add({ radius }, 'radius', 1, 5, 0.1).onChange((value: React.SetStateAction<number>) => setRadius(value));
-        gui.add({ numParticles }, 'numParticles', 10, 5000, 10).onChange((value: React.SetStateAction<number>) => setNumParticles(value));
+        gui.add({ radius }, 'radius', -1, 5, 0.1).onChange((value: React.SetStateAction<number>) => setRadius(value));
+        gui.add({ numParticles }, 'numParticles', 1, 5000, 10).onChange((value: React.SetStateAction<number>) => setNumParticles(value));
         gui.add({ size }, 'size', 0.001, 1, 0.01).onChange((value: React.SetStateAction<number>) => setSize(value));
-        gui.add({ gap }, 'gap', 0, 10, 0.01).onChange((value: React.SetStateAction<number>) => setGap(value));
+        gui.add({ gap }, 'gap', -10, 10, 0.01).onChange((value: React.SetStateAction<number>) => setGap(value));
 
         const toggleGUIVisibility = (event: KeyboardEvent) => {
             if (event.key === 'h') {

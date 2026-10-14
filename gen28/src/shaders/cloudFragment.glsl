@@ -4,7 +4,6 @@ varying vec2 vUv;
 
 #define PI 3.14159265359
 #define ZERO 0
-#define LOWQUALITY 0
 //==========================================================================================
 // general utilities
 //==========================================================================================
@@ -344,7 +343,7 @@ vec3 fog( in vec3 col, float t )
 
 vec4 cloudsFbm( in vec3 pos )
 {
-    return fbmd_8(pos*0.0015+vec3(2.0,1.1,1.0)+0.07*vec3(-uTime,0.5*uTime,0.15*uTime));
+    return fbmd_8(pos*0.001+vec3(2.0,1.1,1.0)+0.07*vec3(0.3*uTime,0.5,0.9*uTime));
 }
 
 vec4 cloudsMap( in vec3 pos, out float nnd )
